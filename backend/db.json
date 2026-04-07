@@ -1,0 +1,95 @@
+{
+  "users": [
+    {
+      "id": "admin-id-1",
+      "username": "давид",
+      "password": "1234",
+      "role": "admin"
+    },
+    {
+      "id": "1775390026819",
+      "username": "давидд",
+      "password": "$2a$10$8YqS8Kec8NfNCWwdlsixFeeL0f80NAVoY5drLz3TINZnF5CkVhjN.",
+      "role": "user"
+    },
+    {
+      "id": "1775390267224",
+      "username": "давиддд",
+      "password": "$2a$10$PCB/NSR/IyWeU.dAz3JFk.CGLs6.gw6Bq.BFEPjupkKD6sJVK4/Yi",
+      "role": "user"
+    },
+    {
+      "id": "1775390915685",
+      "username": "david",
+      "password": "$2a$10$s/t7neV6WUV8Fe.dhpDRM.WtiAAtBsoxizdawOce0A7wdL3LC5eX6",
+      "role": "user"
+    },
+    {
+      "id": "1775590433708",
+      "username": "MERGEN",
+      "password": "1234",
+      "role": "user"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Nike Air Max 270",
+      "price": 65000,
+      "category": "Running",
+      "img": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=300"
+    },
+    {
+      "id": "2",
+      "name": "Adidas Forum Low",
+      "price": 52000,
+      "category": "Lifestyle",
+      "img": "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=300"
+    },
+    {
+      "id": "3",
+      "name": "Jordan 1 Retro High",
+      "price": 95000,
+      "category": "Basketball",
+      "img": "https://images.unsplash.com/photo-1597045566774-bf0440d89ef4?auto=format&fit=crop&w=300"
+    },
+    {
+      "id": "4",
+      "name": "New Balance 530",
+      "price": 48000,
+      "category": "Lifestyle",
+      "img": "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=300"
+    },
+    {
+      "name": "давид",
+      "price": 10000000000000,
+      "img": "ыш",
+      "category": "Sneakers",
+      "id": "VulBCeb"
+    },
+    {
+      "name": "Давиддддд2",
+      "price": 24232,
+      "img": "https://avatars.mds.yandex.net/get-mpic/16442410/2a000001969fd24c37b0a7eb105f8cd5276a/orig",
+      "category": "Sneakers",
+      "id": "6OruFmN"
+    }
+  ],
+  "orders": [
+    {
+      "userId": "1775590433708",
+      "items": [
+        {
+          "name": "давид",
+          "price": 10000000000000,
+          "img": "ыш",
+          "category": "Sneakers",
+          "id": "VulBCeb"
+        }
+      ],
+      "date": "08.04.2026, 00:47:17",
+      "total": 10000000000000,
+      "id": 1
+    }
+  ]
+}
