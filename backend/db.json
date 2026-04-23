@@ -2,94 +2,99 @@
   "users": [
     {
       "id": "admin-id-1",
-      "username": "давид",
+      "username": "admin",
       "password": "1234",
       "role": "admin"
     },
     {
-      "id": "1775390026819",
-      "username": "давидд",
-      "password": "$2a$10$8YqS8Kec8NfNCWwdlsixFeeL0f80NAVoY5drLz3TINZnF5CkVhjN.",
-      "role": "user"
-    },
-    {
-      "id": "1775390267224",
-      "username": "давиддд",
-      "password": "$2a$10$PCB/NSR/IyWeU.dAz3JFk.CGLs6.gw6Bq.BFEPjupkKD6sJVK4/Yi",
-      "role": "user"
-    },
-    {
-      "id": "1775390915685",
-      "username": "david",
-      "password": "$2a$10$s/t7neV6WUV8Fe.dhpDRM.WtiAAtBsoxizdawOce0A7wdL3LC5eX6",
-      "role": "user"
-    },
-    {
-      "id": "1775590433708",
-      "username": "MERGEN",
+      "id": "user-id-1",
+      "username": "user",
       "password": "1234",
       "role": "user"
     }
   ],
+  "categories": [
+    {
+      "id": "men",
+      "name": "Men"
+    },
+    {
+      "id": "women",
+      "name": "Women"
+    },
+    {
+      "id": "kids",
+      "name": "Kids"
+    }
+  ],
   "products": [
     {
-      "id": "1",
       "name": "Nike Air Max 270",
       "price": 65000,
-      "category": "Running",
-      "img": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=300"
+      "img": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80",
+      "description": "david tigr",
+      "categoryId": "men",
+      "categoryName": "Men",
+      "id": "1"
     },
     {
       "id": "2",
       "name": "Adidas Forum Low",
       "price": 52000,
-      "category": "Lifestyle",
-      "img": "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=300"
+      "categoryId": "women",
+      "categoryName": "Women",
+      "img": "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=900&q=80"
     },
     {
       "id": "3",
       "name": "Jordan 1 Retro High",
       "price": 95000,
-      "category": "Basketball",
-      "img": "https://images.unsplash.com/photo-1597045566774-bf0440d89ef4?auto=format&fit=crop&w=300"
+      "categoryId": "men",
+      "categoryName": "Men",
+      "img": "https://images.unsplash.com/photo-1597045566774-bf0440d89ef4?auto=format&fit=crop&w=900&q=80"
     },
     {
       "id": "4",
       "name": "New Balance 530",
       "price": 48000,
-      "category": "Lifestyle",
-      "img": "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=300"
+      "categoryId": "women",
+      "categoryName": "Women",
+      "img": "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=900&q=80"
     },
     {
-      "name": "давид",
-      "price": 10000000000000,
-      "img": "ыш",
-      "category": "Sneakers",
-      "id": "VulBCeb"
+      "id": "5",
+      "name": "Puma Kids Runner",
+      "price": 28000,
+      "categoryId": "kids",
+      "categoryName": "Kids",
+      "img": "https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=900&q=80"
     },
     {
-      "name": "Давиддддд2",
-      "price": 24232,
-      "img": "https://avatars.mds.yandex.net/get-mpic/16442410/2a000001969fd24c37b0a7eb105f8cd5276a/orig",
-      "category": "Sneakers",
-      "id": "6OruFmN"
+      "name": "david",
+      "price": 10000,
+      "img": "dldl",
+      "description": "david tigr",
+      "categoryId": "men",
+      "categoryName": "Men",
+      "id": "8kXlrQF"
     }
   ],
   "orders": [
     {
-      "userId": "1775590433708",
+      "userId": "user-id-1",
       "items": [
         {
-          "name": "давид",
-          "price": 10000000000000,
-          "img": "ыш",
-          "category": "Sneakers",
-          "id": "VulBCeb"
+          "id": "2",
+          "name": "Adidas Forum Low",
+          "price": 52000,
+          "categoryId": "women",
+          "categoryName": "Women",
+          "img": "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=900&q=80"
         }
       ],
-      "date": "08.04.2026, 00:47:17",
-      "total": 10000000000000,
-      "id": 1
+      "date": "22.04.2026, 22:15:23",
+      "total": 52000,
+      "id": 3
     }
   ]
 }

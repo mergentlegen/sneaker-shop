@@ -1,18 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ProductCard = ({ product, canBuy, onBuy }) => {
   return (
     <article className="card">
-      <img src={product.img} alt={product.name} className="card-image" />
-      <h3>{product.name}</h3>
+      <Link to={`/products/${product.id}`} className="card-link">
+        <img src={product.img} alt={product.name} className="card-image" />
+        <h3>{product.name}</h3>
+      </Link>
+      <p className="card-category">{product.categoryName}</p>
       <p>{Number(product.price).toLocaleString()} KZT</p>
 
       {canBuy ? (
         <button type="button" className="button" onClick={() => onBuy(product)}>
-          Купить сейчас
+          Buy Now
         </button>
       ) : (
-        <p className="card-hint">Войдите, чтобы оформить покупку.</p>
+        <p className="card-hint">Log in to place an order.</p>
       )}
     </article>
   );

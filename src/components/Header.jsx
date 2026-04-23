@@ -1,13 +1,17 @@
-import React, { useContext } from 'react';
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
-import { AppContext } from '../context/AppContext';
+import { toast } from 'react-toastify';
+import { logoutUser } from '../redux/actions/authActions';
 
 const Header = () => {
-  const { user, setUser } = useContext(AppContext);
+  const user = useSelector((state) => state.auth.user);
+  const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    setUser(null);
+    dispatch(logoutUser());
+    toast.info('You have logged out.');
     navigate('/');
   };
 
@@ -20,18 +24,18 @@ const Header = () => {
 
         <div className="nav-links">
           <Link to="/" className="nav-link">
-            Каталог
+            Catalog
           </Link>
 
           {user ? (
             <>
               <Link to="/profile" className="nav-link">
-                Мои заказы
+                My Orders
               </Link>
 
               {user.role === 'admin' && (
                 <Link to="/admin" className="nav-link nav-link-admin">
-                  Админка
+                  Admin
                 </Link>
               )}
 
@@ -40,13 +44,13 @@ const Header = () => {
                   {user.username} | {user.role}
                 </span>
                 <button type="button" className="button button-danger button-inline" onClick={handleLogout}>
-                  Выйти
+                  Logout
                 </button>
               </div>
             </>
           ) : (
             <Link to="/login" className="button button-inline">
-              Вход
+              Login
             </Link>
           )}
         </div>
